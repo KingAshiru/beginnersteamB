@@ -40,3 +40,28 @@ input[placeholder] {
 .form-check-label {
   margin-left: 10px;
 }
+.footer{
+  font-family: Roboto,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    line-height: 1px;
+    color: #70757a;
+    color: rgba(0,0,0,0.66);
+    margin-top: 2px;
+}
+.footer1{
+  font: 400 10px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  margin-top: 6px;
+  padding: 0 12px;
+  text-align: center;
+}
+.go-form{
+  font-family: 'Product Sans',Arial,Helvetica,sans-serif;
+  font-size: 22.1px;
+  position: relative;
+  top: 3px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
