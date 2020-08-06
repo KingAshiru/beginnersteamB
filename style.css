@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-size: 15.5px;
 }
 .bg-gray {
   background-color: rgb(231, 229, 229);
@@ -8,7 +9,9 @@
 .purple-top {
   border-top: 8px solid #673ab7;
 }
-
+.additional-p {
+  font-size: 13px;
+}
 input[type="text"],
 select.form-control {
   background: transparent;
@@ -29,11 +32,9 @@ select.form-control:focus {
 input[placeholder] {
   font-size: 14px;
 }
-.form-check{
+.form-check {
   margin-top: 10px;
 }
-.form-check-label{
-  margin-left:10px;
-
-  
+.form-check-label {
+  margin-left: 10px;
 }
