@@ -16,7 +16,7 @@
     />
     <!-- googleFonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <!-- css -->
@@ -27,7 +27,7 @@
     <div class="section bg-gray">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-lg-6 mx-auto py-3">
+          <div class="col-md-10 col-lg-7 mx-auto py-3">
             <form
               action="https://docs.google.com/forms/d/e/1FAIpQLSewsPhtmO1AfY_7G9Pr6gR-ABi1D9XV4DG4_iJswgQ-vzlh5w/formResponse"
               target="_self"
@@ -35,7 +35,7 @@
               method="POST"
             >
               <fieldset class="bg-white rounded my-2 purple-top p-3">
-                <h2>
+                <h2 style="font-weight: normal;">
                   WeJapa Survey Form
                 </h2>
                 <p>
@@ -59,12 +59,12 @@
                 </div>
               </fieldset>
               <!-- the tag ends here -->
-                <fieldset class="bg-white rounded my-2 p-3">
-                <p>Slack username<span class="text-danger">*</span></p>
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>Slack username <span class="text-danger">*</span></p>
                 <div class="form-group">
                   <input
                     type="text"
-                    name="full name"
+                    name="username"
                     class="form-control bg-transparent w-50"
                     required
                     placeholder="Your Answer"
@@ -72,104 +72,171 @@
                 </div>
               </fieldset>
               <!--Radio section-->
-               <fieldset class="bg-white rounded my-2 p-3">
-                <p>Have you uploaded your slack profile picture? <span class="text-danger">*</span></p>
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  Have you uploaded your slack profile picture?
+                  <span class="text-danger">*</span>
+                </p>
                 <div class="form-group">
-                  <input type="radio" name="recommend" id="yes" value="yes">
-                        <label for="yes">Yes ❤ </label> <br>
-                  <input type="radio" name="recommend" id="no" value="no">
-                        <label for="no">No - seriously,head over to Slack and upload it now.. then choose "Yes" 😊</label>
+                  <input type="radio" name="recommend" id="yes" value="yes" />
+                  <label for="yes">Yes ❤ </label> <br />
+                  <input type="radio" name="recommend" id="no" value="no" />
+                  <label for="no"
+                    >No - seriously,head over to Slack and upload it now.. then
+                    choose "Yes" 😊</label
+                  >
                 </div>
               </fieldset>
-              
+
               <fieldset class="bg-white rounded my-2 p-3">
                 <p>Phone number</p>
                 <div class="form-group">
                   <input
-                    type="text"
+                    type="tel"
                     name="phone number"
                     class="form-control bg-transparent w-50"
-                    required
                     placeholder="Your Answer"
                   />
                 </div>
               </fieldset>
               <fieldset class="bg-white rounded my-2 p-3">
-                  <p>Choose a learninng track <span class="text-danger">*</span></p>
-              <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <p>
+                  Choose a learninng track <span class="text-danger">*</span>
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learningTrack"
+                    id="exampleRadios1"
+                    value="option1"
+                  />
                   <label class="form-check-label" for="exampleRadios1">
                     Beginner (HTML & CSS)
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learningTrack"
+                    id="exampleRadios2"
+                    value="option2"
+                  />
                   <label class="form-check-label" for="exampleRadios2">
                     JavaScript
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learningTrack"
+                    id="exampleRadios3"
+                    value="option3"
+                  />
                   <label class="form-check-label" for="exampleRadios3">
                     React
                   </label>
                 </div>
-                </fieldset>
-              <fieldset  class="bg-white rounded my-2 p-3" >
-            <p>Would you learn at your own pace? <span class="text-danger">*</span></p>
-            <p>You really want to take your time to learn this your way, maybe for more than three (3) months. This
-                means that you won't follow the timeline in the curriculum.</p>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
+              </fieldset>
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  Would you learn at your own pace?
+                  <span class="text-danger">*</span>
+                </p>
+                <p class="additional-p">
+                  You really want to take your time to learn this your way,
+                  maybe for more than three (3) months. This means that you
+                  won't follow the timeline in the curriculum.
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learnPace"
+                    id="exampleRadios4"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="exampleRadios4">
                     Yes, I don't want stress at all.
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learnPace"
+                    id="exampleRadios5"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="exampleRadios5">
                     No, I want to feel the rush with other interns.
-                </label>
-            </div>
+                  </label>
+                </div>
+              </fieldset>
 
-        </fieldset>
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  How many hours can you dedicate to your learning daily?
+                  <span class="text-danger">*</span>
+                </p>
 
-        <fieldset  class="bg-white rounded my-2 p-3" >
-            <p>How many hours can you dedicate to your learning daily? <span class="text-danger">*</span></p>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learnDedicate"
+                    id="exampleRadios6"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="exampleRadios6">
                     Less than 2 hours
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learnDedicate"
+                    id="exampleRadios7"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="exampleRadios7">
                     Close to 6 hours
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learnDedicate"
+                    id="exampleRadios8"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="exampleRadios8">
                     Between 7 and 14 hours
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="learnDedicate"
+                    id="exampleRadios9"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="exampleRadios9">
                     14+ hours 🙌 - awesome, but it's not advisable.
-                </label>
-            </div>
+                  </label>
+                </div>
+              </fieldset>
 
-        </fieldset>
-                
-                
-        
-        <fieldset class="bg-white rounded my-2 p-3">
-                <p>Tell us why you chose to learn frontend development.<span class="text-danger">*</span></p>
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  Tell us why you chose to learn frontend development.
+                  <span class="text-danger">*</span>
+                </p>
                 <div class="form-group">
                   <input
                     type="text"
@@ -179,53 +246,63 @@
                     placeholder="Your Answer"
                   />
                 </div>
-        </fieldset>
-        
-        <fieldset class="bg-white rounded my-2 p-3">
-                <p>Apart from money &#129297; , what motivates you?<span class="text-danger">*</span></p>
+              </fieldset>
+
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  Apart from money &#129297; , what motivates you?
+                  <span class="text-danger">*</span>
+                </p>
                 <div class="form-group">
                   <input
                     type="text"
-                    name="full name"
+                    name="motivation"
                     class="form-control bg-transparent w-50"
                     required
                     placeholder="Your Answer"
                   />
                 </div>
-        </fieldset>
-        
-    
-                  <fieldset class="bg-white rounded my-2 p-3">
-            <p>Hobbies? We'd love to know them!<span class="text-danger"></span></p>
-            <div class="form-group">
+              </fieldset>
+
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  Hobbies? We'd love to know them!
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="hobbies"
+                    class="form-control bg-transparent w-50"
+                    placeholder="Your Answer"
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset class="bg-white rounded my-2 p-3">
+                <p>
+                  Anything you'd like to tell us?
+                </p>
+                <p class="additional-p">
+                  We would love to hear your feedback about the program - areas
+                  that you think we can improve. You can even tell us a joke,
+                  seriously anything
+                </p>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="feedback"
+                    class="form-control bg-transparent w-50"
+                    required
+                    placeholder="Your Answer"
+                  />
+                </div>
+              </fieldset>
+
               <input
-                type="text"
-                name="full name"
-                class="form-control bg-transparent w-50"
-                required
-                placeholder="Your Answer"
+                class="btn btn-primary px-3"
+                type="submit"
+                value="Submit"
               />
-            </div>
-    </fieldset>
-
-    <fieldset class="bg-white rounded my-2 p-3">
-        <p>Anything you'd like to tell us?<span class="text-danger"></span></p>
-        <p>We would love to hear your feedback about the program - areas that you think we can improve. You can even tell us a joke, seriously anything</p>
-        <div class="form-group">
-          <input
-            type="text"
-            name="full name"
-            class="form-control bg-transparent w-50"
-            required
-            placeholder="Your Answer"
-          />
-        </div>
-</fieldset>
-      
-
-      <input class="btn btn-primary" type="submit" value="Submit"> 
-
-              
             </form>
           </div>
         </div>
