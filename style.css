@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15.5px;
 }
 .bg-gray {
@@ -13,6 +13,7 @@
   font-size: 13px;
 }
 input[type="text"],
+input[type="tel"],
 select.form-control {
   background: transparent;
   border: none;
@@ -23,6 +24,7 @@ select.form-control {
 }
 
 input[type="text"]:focus,
+input[type="tel"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
